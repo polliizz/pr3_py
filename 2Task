@@ -1,0 +1,12 @@
+a = input("Введіть перше число: ")
+b = input("Введіть друге число: ")
+
+try:
+    x = float(a)
+    y = float(b)
+    print(f"Сума: {x + y}")
+    print(f"Різниця: {x - y}")
+    print(f"Добуток: {x * y}")
+    print(f"Частка: {x / y if y != 0 else 'Ділення на нуль!'}")
+except ValueError:
+    print("Помилка")
