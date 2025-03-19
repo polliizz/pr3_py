@@ -1,0 +1,7 @@
+s = input("Введіть числа: ")
+try:
+    nums = [float(x) for x in s.split(",")]
+    print(f"Сума: {sum(nums)}")
+    print(f"Середнє: {sum(nums) / len(nums)}")
+except ValueError:
+    print("Помилка")
